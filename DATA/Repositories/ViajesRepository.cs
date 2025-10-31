@@ -25,7 +25,7 @@ namespace repasoFinal2.DATA.Repositories
         {
             return await _context.Viajes.Where(x => x.Estado == estado).ToListAsync();
         }
-
+        //Prueba git
         public async Task<bool> UpdateFecha(Viaje viaje, DateOnly fecha)
         {
             viaje.FechaInicio = fecha;
